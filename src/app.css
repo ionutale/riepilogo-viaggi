@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "@tailwindcss/forms";
+
+@media print {
+  .navbar,
+  .btn,
+  .no-print {
+    display: none !important;
+  }
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .print\:border-none {
+    border: none !important;
+  }
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+  .print\:text-xs {
+    font-size: 0.75rem !important;
+  }
+  .print\:block {
+    display: block !important;
+  }
+  .print\:table-auto {
+    table-layout: auto !important;
+  }
+  .print\:space-y-2 > * + * {
+    margin-top: 0.5rem !important;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
