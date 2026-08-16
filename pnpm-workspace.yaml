@@ -1,3 +1,15 @@
 allowBuilds:
-  esbuild: set this to true or false
-onlyBuiltDependencies: '["esbuild"]'
+  esbuild: true
+minimumReleaseAgeExclude:
+  - esbuild@0.24.3
+  - cookie@0.7.0
+  - esbuild@0.28.1
+  - vite@8.0.16
+  - better-auth@1.6.13
+  - '@sveltejs/kit@2.69.1'
+  - better-auth@1.6.22
+  - postcss@8.5.23
+  - '@sveltejs/kit@2.70.2'
+  - nanoid@3.3.16
+  - nanoid@3.3.18
+  - postcss@8.5.18
