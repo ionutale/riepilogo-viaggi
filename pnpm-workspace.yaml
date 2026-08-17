@@ -13,5 +13,7 @@ minimumReleaseAgeExclude:
   - nanoid@3.3.16
   - nanoid@3.3.18
   - postcss@8.5.18
-patchedDependencies:
-  cookie@0.6.0: patches/cookie@0.6.0.patch
+
+overrides:
+  cookie: 0.7.0
+  esbuild@^0.18.20: 0.25.4
