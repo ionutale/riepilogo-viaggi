@@ -5,6 +5,6 @@ export default defineConfig({
   out: "./src/lib/server/db/migrations",
   dialect: "postgresql",
   dbCredentials: {
-    url: "postgres://app:devpassword@localhost:5433/riepilogo",
+    url: process.env.DATABASE_URL ?? "postgres://app:devpassword@localhost:5433/riepilogo",
   },
 });
